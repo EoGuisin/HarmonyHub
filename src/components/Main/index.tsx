@@ -88,7 +88,7 @@ export function Main(props: Props) {
                     <audio ref={musicRef} src={playlist[props.index]} autoPlay />
                 </div>
             </WrapperPlaylistIcons>
-            <Volume value={100} type="range" min={0} max={MAX} onChange={(e) => handleVolume(e)} />
+            <Volume type="range" min={0} max={MAX} onChange={(e) => handleVolume(e)} />
         </Container>
     )
 }
